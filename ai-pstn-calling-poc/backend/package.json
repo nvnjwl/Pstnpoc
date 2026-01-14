@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc -p tsconfig.json",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "sync-frontend": "bash ../scripts/build-and-copy-frontend.sh"
   },
   "dependencies": {
     "cors": "^2.8.5",
@@ -17,6 +18,7 @@
     "ws": "^8.17.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/node": "^22.5.5",
     "@types/ws": "^8.5.12",
